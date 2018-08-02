@@ -1,0 +1,74 @@
+.desafio
+  background-color: $desafiobg
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 0 30px
+  &__titulo
+    text-align: center
+    font-size: 1.5rem
+    padding: 70px 0
+  &__card
+    background-color: #fff
+    box-shadow: 1px 1px 8px 3px #00000012
+    border-radius: 2px
+    max-width: 800px
+    width: 100%
+    margin-bottom: 120px
+    padding: 50px 20px
+    display: flex
+    justify-content: space-around
+    @media screen and (max-width: 768px)
+      flex-direction: column
+      align-items: center
+.brand
+  display: flex
+  flex-direction: column
+.brand
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  @media screen and (max-width: 768px)
+    margin-bottom: 20px
+  &__img
+    width: 120px
+    height: 120px
+    background-color: #a2a1a1
+    border-radius: 55%
+    @media screen and (max-width: 768px)
+      margin-bottom: 20px
+  &__link
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 700
+    color: $fontcolorcard
+.info
+  color: $fontcolorcard
+  &__lista
+    list-style: none
+    margin-bottom: 10px
+    &__item
+      font-weight: 700
+      margin-bottom: 10px
+  &__links
+    text-transform: uppercase
+    margin-top: 50px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 540px)
+      flex-direction: column
+    &__btn
+      text-decoration: none
+      font-size: .9rem
+      text-align: center
+      color: $buttonscolor
+      border: 2px solid $buttonscolor
+      border-radius: 2px
+      padding: 5px 50px
+      margin-right: 10px
+      @media screen and (max-width: 540px)
+        margin: 10px 0    
+      &:last-child
+        margin: 0      
