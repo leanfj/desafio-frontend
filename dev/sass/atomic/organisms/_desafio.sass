@@ -18,6 +18,7 @@
     padding: 50px 20px
     display: flex
     justify-content: space-around
+    flex-wrap: wrap
     @media screen and (max-width: 768px)
       flex-direction: column
       align-items: center
@@ -71,4 +72,33 @@
       @media screen and (max-width: 540px)
         margin: 10px 0    
       &:last-child
-        margin: 0      
+        margin: 0
+.repositorios
+  width: 100%
+  margin: 0
+  overflow: hidden
+  height: 0
+  transition: all .3s ease-in
+  &__titulo
+    text-transform: uppercase
+    font-weight: 700
+    color: $fontcolorcard
+    margin-bottom: 20px
+  &__lista
+    list-style: none
+    &__item
+      padding: 5px 5px
+      background-color: $desafiobg
+      &:nth-child(even)
+        background-color: #ffffff
+      &__link
+        text-transform: uppercase
+        text-decoration: none
+        color: $fontcolorcard
+        font-size: .8rem
+        font-weight: 700
+
+
+.showrepos
+  margin: 50px 0
+  height: 100%
