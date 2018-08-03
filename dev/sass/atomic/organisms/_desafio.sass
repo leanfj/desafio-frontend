@@ -44,6 +44,23 @@
     text-decoration: none
     font-weight: 700
     color: $fontcolorcard
+    position: relative
+    padding-bottom: 4px
+    overflow: hidden
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      height: 2px
+      width: 100%
+      background-color: $fontcolorcard
+      transition: .3s
+      transform: translateX(-101%)
+    &:hover
+      &:after
+        transform: translateX(0)
+
 .info
   color: $fontcolorcard
   &__lista
@@ -69,16 +86,21 @@
       border-radius: 2px
       padding: 5px 50px
       margin-right: 10px
+      cursor: pointer
+      transition: all .2s
       @media screen and (max-width: 540px)
         margin: 10px 0    
       &:last-child
         margin: 0
+      &:hover
+        color: #ffffff
+        background-color: $buttonscolor
 .repositorios
   width: 100%
   margin: 0
   overflow: hidden
   height: 0
-  transition: all .3s ease-in
+  transition: all .1s
   &__titulo
     text-transform: uppercase
     font-weight: 700
@@ -97,8 +119,6 @@
         color: $fontcolorcard
         font-size: .8rem
         font-weight: 700
-
-
 .showrepos
   margin: 50px 0
   height: 100%

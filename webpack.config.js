@@ -22,9 +22,9 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|gif)$/i,
         use: {
-          loader: "file-loader",
+          loader: "url-loader",
           options: {
             name: "[name].[ext]",
             outputPath: "/img/"
