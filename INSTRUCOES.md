@@ -6,6 +6,9 @@ Estou criando esté readme de instruções para colocar minhas conciderações f
 
 Realizar o clone/donwload do projeto
 
+Mudar para branch leandro_01_08
+`git checkout leandro_01_08`
+
 Navegar para pasta.
 `cd desafio-frontend`
 
