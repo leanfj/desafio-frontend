@@ -3,7 +3,7 @@ import toggleClass from "./main";
 //Listagem de Repositorios
 let btnRepo = document.querySelector("#js-btn");
 
-btnRepo.addEventListener("click", () => {
+window.addEventListener("load", () => {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://api.github.com/users/leanfj/repos", true);
   xhr.onload = () => {
@@ -27,5 +27,8 @@ btnRepo.addEventListener("click", () => {
     reposList.innerHTML = element;
   };
   xhr.send();
+});
+
+btnRepo.addEventListener("click", () => {
   toggleClass();
 });
